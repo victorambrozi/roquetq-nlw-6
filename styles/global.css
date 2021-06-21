@@ -5,8 +5,6 @@
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;700&display=swap');
-
 :root {
     --black: #0D114F;
     --white: #FAFAFA;
