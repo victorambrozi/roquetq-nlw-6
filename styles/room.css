@@ -135,7 +135,6 @@
 #questions .actions > .delete {
     margin-right: 2.4rem;
     display: flex;
-    /* flex-wrap: wrap; */
     align-items: center;
     color: var(--grey-dark);
 }
