@@ -133,10 +133,14 @@
 
 #questions .actions > .check,
 #questions .actions > .delete {
-    margin-right: 2.4rem;
     display: flex;
     align-items: center;
     color: var(--grey-dark);
+}
+
+#questions .actions > .check {
+    margin-right: 2.4rem;
+
 }
 
 #questions .actions > .check img,
