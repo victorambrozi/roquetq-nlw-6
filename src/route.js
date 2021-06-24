@@ -1,9 +1,16 @@
 const express = require('express');
 
-const route = express.Router();
+const router = express.Router();
 
-route.get('/', (req, res) => res.render("index"));
-route.get('/room', (req, res) => res.render("room"));
-route.get('/create-pass', (req, res) => res.render("create-pass"));
 
-module.exports = route
+// .get() - captura algo
+// .post() - envia ago
+router.get('/', (req, res) => res.render("index"));
+router.get('/room', (req, res) => res.render("room"));
+router.get('/create-pass', (req, res) => res.render("create-pass"));
+
+// Formato que o formulario de dentro da modal tem que passar a informação
+// router.get('/room/:room/:question/:action');  res.param.variavel (room, question, action)
+
+
+module.exports = router;
