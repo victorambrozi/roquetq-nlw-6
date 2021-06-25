@@ -1,5 +1,6 @@
 const express = require('express');
-const questionController = require("./controllers/questionController")
+const questionController = require("./controllers/questionController");
+const roomController = require("./controllers/roomController");
 const router = express.Router();
 
 
@@ -8,10 +9,11 @@ const router = express.Router();
 router.get('/', (req, res) => res.render("index", {page: "enter-room"}));
 router.get('/create-pass', (req, res) => res.render("index", {page: "create-pass"}));
 
-router.get('/room', (req, res) => res.render("room"));
+router.get('/room/:room', (req, res) => res.render("room"));
 
 // Formato que o formulario de dentro da modal tem que passar a informação
 router.post('/room/:room/:question/:action', questionController.index)  //res.param.variavel (room, question, action)
+router.post('/room/create-room', roomController.create);
 
 
 module.exports = router;
