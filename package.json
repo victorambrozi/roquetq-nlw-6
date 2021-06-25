@@ -4,7 +4,8 @@
   "description": "<h1 align=\"center\">   <img alt=\"Rocket.Q\" title=\"Rocket.Q\" src=\".github/rocketq.png\" width=\"220px\" /> </h1>",
   "main": "src/server.js",
   "scripts": {
-    "start": "nodemon ."
+    "start": "nodemon .",
+    "init-db": "node src/db/init.js"
   },
   "repository": {
     "type": "git",
