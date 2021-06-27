@@ -12,8 +12,11 @@ router.get('/create-pass', (req, res) => res.render("index", {page: "create-pass
 router.get('/room/:room', roomController.open);
 
 // Formato que o formulario de dentro da modal tem que passar a informação
-router.post('/question/:room/:question/:action', questionController.index)  //res.param.variavel (room, question, action)
 router.post('/create-room', roomController.create);
+
+
+router.post('/question/create/:room', questionController.create);
+router.post('/question/:room/:question/:action', questionController.index)  //res.param.variavel (room, question, action)
 
 
 module.exports = router;

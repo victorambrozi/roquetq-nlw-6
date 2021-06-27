@@ -6,5 +6,10 @@ module.exports = {
         const passowrd = req.body.password;
 
         console.log(roomId, questionId, action,passowrd)
+    },
+
+    create(req, res) {
+        const question = req.body.question;
+        const room = req.params.room;
     }
 }

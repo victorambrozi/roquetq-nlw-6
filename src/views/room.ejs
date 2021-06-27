@@ -42,7 +42,7 @@
         <main>
             <section id="question-form">
                 <h2>Faça sua pergunta</h2>
-                <form action="#">
+                <form action="/question/create/<%= roomId %>" method="POST">
                     <label for="question" class="sr-only">O que você quer perguntar</label>
                     <textarea name="question" id="question" cols="30" rows="10"
                         placeholder="O que você quer perguntar?"></textarea>
