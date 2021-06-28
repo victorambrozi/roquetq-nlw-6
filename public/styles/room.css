@@ -162,3 +162,31 @@
 #questions .actions > a img {
     margin-right: .8rem;
 }
+
+/* NO QUESTIONS */
+
+.no-questions {
+   text-align: center;
+   margin-top: 5.2rem;
+}
+
+.no-questions img {
+    max-width: 100%;
+    margin-bottom: 1.2rem;
+}
+
+.no-questions p {
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.no-questions p + p {
+    margin-top: 1.3rem;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    
+}
