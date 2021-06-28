@@ -1,4 +1,3 @@
-const { open } = require('sqlite');
 const Database = require('../db/config');
 
 
